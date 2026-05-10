@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+  <title>Kauan — Fullstack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">kauan<span>.dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Alternar tema">
+      <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      <span id="themeTxt">Modo Claro</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="about">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <h1 class="hero-title">
+          <span class="accent">Kauan</span><br/>
+          <span class="dim">Fullstack</span> Developer
+        </h1>
+        <p class="hero-desc">
+          Desenvolvedor Fullstack apaixonado por criar experiências digitais completas — do design de interfaces ao servidor. Especializado em <strong>Python & Django</strong> no backend e <strong>React & JavaScript</strong> no frontend.
+        </p>
+        <div class="hero-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">React</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Docker</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Entrar em contato
+          </a>
+          <a href="projetos.html" class="btn-outline">
+            Ver projetos
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <div class="photo-ring"></div>
+          <div class="photo-ring-inner"></div>
+          <div class="photo-img">
+            <div class="photo-placeholder">
+              <img src="src/na_camisa_poe_o_simbulo_202605092242.jpeg" style="width: 280px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label"  style="font-family: 'Roboto', sans-serif;">// stack técnico</p>
+      <h2 class="section-title" style="font-family: 'Roboto', sans-serif;">Stack Técnico</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Ferramentas e tecnologias que domino para construir soluções completas, escaláveis e bem estruturadas.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="backend">Backend</button>
+        <button class="tab-btn" data-tab="data">Banco & DevOps</button>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="tab-panel active" id="tab-frontend">
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              <span class="skill-name">React</span>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.85"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">HTML & CSS</span>
+            </div>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.92"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+           
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.82"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+             
+              <span class="skill-name">TypeScript</span>
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.65"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">Tailwind CSS</span>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.80"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+             
+              <span class="skill-name">Next.js</span>
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.60"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="tab-panel" id="tab-backend">
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+             
+              <span class="skill-name">Python</span>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.90"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">Django</span>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.85"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">FastAPI</span>
+            </div>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.72"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+            
+              <span class="skill-name">REST APIs</span>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.88"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+             
+              <span class="skill-name">Auth / JWT</span>
+            </div>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.78"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+          
+              <span class="skill-name">Node.js</span>
+            </div>
+            <span class="skill-pct">55%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.55"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data & DevOps -->
+    <div class="tab-panel" id="tab-data">
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+           
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.82"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+          
+              <span class="skill-name">SQL</span>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.80"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">Redis</span>
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.60"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+            
+              <span class="skill-name">Docker</span>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.70"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+              
+              <span class="skill-name">Git & GitHub</span>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.88"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-name-row">
+             
+              <span class="skill-name">AWS / Cloud</span>
+            </div>
+            <span class="skill-pct">52%</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-pct="0.52"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-box reveal">
+      <h2 class="section-title" style="text-align:center" font-family=" Roboto ">Vamos Trabalhar Juntos?</h2>
+      <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;max-width:420px;margin:1rem auto 0;">
+        Aberto a oportunidades de emprego, projetos freelance e colaborações. Me manda uma mensagem!
+      </p>
+      <a href="mailto:tkaua199@gmail.com" class="contact-email">tkaua199@gmail.com</a>
+      <a href="https://wa.me/5521969185198" target="_blank" class="btn-primary" style="margin:0 auto;display:inline-flex;">
+        Enviar mensagem
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </a>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          instagram
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          Twitter / X
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Feito por <strong>Kauan</strong> · <span id="year"></span></p>
+</footer>
+
+<script>
+  // ─── Theme toggle ───
+  const root    = document.documentElement;
+  const btn     = document.getElementById('themeBtn');
+  const icon    = document.getElementById('themeIcon');
+  const txt     = document.getElementById('themeTxt');
+
+  const moonSVG = `<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>`;
+  const sunSVG  = `<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>`;
+
+  btn.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    icon.innerHTML = isDark ? sunSVG : moonSVG;
+    txt.textContent = isDark ? 'Modo Escuro' : 'Modo Claro';
+  });
+
+  // ─── Tabs ───
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const panel = document.getElementById('tab-' + b.dataset.tab);
+      panel.classList.add('active');
+      // animate bars in new panel
+      panel.querySelectorAll('.bar-fill').forEach(bar => {
+        bar.classList.remove('animated');
+        bar.style.transform = `scaleX(0)`;
+        setTimeout(() => {
+          bar.style.transform = `scaleX(${bar.dataset.pct})`;
+          bar.classList.add('animated');
+        }, 50);
+      });
+    });
+  });
+
+  // ─── Scroll reveal + bar animation ───
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Animate bars inside the revealed card
+        entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+          setTimeout(() => {
+            bar.style.transform = `scaleX(${bar.dataset.pct})`;
+          }, 150);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Animate bars of the initially visible tab on page load
+  setTimeout(() => {
+    document.querySelectorAll('#tab-frontend .bar-fill').forEach(bar => {
+      bar.style.transform = `scaleX(${bar.dataset.pct})`;
+    });
+  }, 600);
+
+  // ─── Year ───
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

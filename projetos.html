@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Império Barber | Em Breve</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#0f0f0f,#1b1b1b);
+      overflow:hidden;
+      color:white;
+      position:relative;
+    }
+
+    .blur{
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:#c59d5f33;
+      filter:blur(120px);
+      border-radius:50%;
+    }
+
+    .blur.top{
+      top:-120px;
+      left:-120px;
+    }
+
+    .blur.bottom{
+      bottom:-120px;
+      right:-120px;
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      width:90%;
+      max-width:700px;
+      padding:50px;
+      border-radius:30px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,0.5);
+      animation:fade 1s ease;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .error{
+      font-size:120px;
+      font-weight:700;
+      color:#c59d5f;
+      line-height:1;
+    }
+
+    h1{
+      font-size:38px;
+      margin-top:10px;
+      margin-bottom:15px;
+    }
+
+    p{
+      color:#bdbdbd;
+      font-size:17px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 32px;
+      background:#c59d5f;
+      color:#111;
+      text-decoration:none;
+      border-radius:14px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 20px rgba(197,157,95,0.3);
+    }
+
+    .footer{
+      margin-top:35px;
+      font-size:14px;
+      color:#777;
+    }
+
+    @media(max-width:600px){
+
+      .container{
+        padding:35px 25px;
+      }
+
+      .error{
+        font-size:90px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+
+      p{
+        font-size:15px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blur top"></div>
+  <div class="blur bottom"></div>
+
+  <div class="container">
+
+    <div class="error">404</div>
+
+    <h1>Página em desenvolvimento</h1>
+
+    <p>
+      A nova experiência da Império Barber ainda está sendo finalizada.
+      Em breve nosso site estará no ar com um visual premium e moderno.
+    </p>
+
+    <a href="index.html" class="btn">Voltar mais tarde</a>
+
+   
+  </div>
+
+</body>
+</html>
